@@ -25,7 +25,9 @@
                         <label class="form-label" for="form3Example4">Password</label>
                     </div>
                     <div class="text-center text-lg-start mt-4 pt-2">
-                        <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;" name="login">Login</button>
+                        <form method="post">
+                        <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;" name="masuk">Login</button>
+                        </form>
                     </div>
                 </form>
             </div>

@@ -10,10 +10,10 @@ class Pages extends BaseController
         ];
         return view('pages/landing_page', $data);
     }
-    public function login() {
+    public function masuk() {
         $data = [
-            'title' => 'Login | ToDoList4Haskell'
+            'title' => 'masuk | ToDoList4Haskell'
         ];
-        return view('Pages/login', $data);
+        return view('pages/masuk', $data);
     }
 }
