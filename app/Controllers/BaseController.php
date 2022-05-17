@@ -35,7 +35,7 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['auth'];
 
     /**
      * Constructor.
@@ -49,5 +49,8 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         $this->nama = 'Rizky';
+        $this->TodolistModel = new \App\Models\TodolistModel();
+        $this->MahasiswaModel = new \App\Models\MahasiswaModel();
+        $this->MatkulModel = new \App\Models\MatkulModel();
     }
 }

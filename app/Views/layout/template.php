@@ -15,6 +15,20 @@
 
 
 <body>
+    <?php if (logged_in()) : ?>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end"" id=" navbarSupportedContent">
+                    <a class="nav-link btn btn-danger text-light" href="/logout">Logout</a>
+                </div>
+            </div>
+        </nav>
+    <?php else : ?>
+    <?php endif; ?>
     <?= $this->renderSection('content'); ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
