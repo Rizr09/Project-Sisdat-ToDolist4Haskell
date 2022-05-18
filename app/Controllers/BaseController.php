@@ -52,5 +52,6 @@ class BaseController extends Controller
         $this->TodolistModel = new \App\Models\TodolistModel();
         $this->MahasiswaModel = new \App\Models\MahasiswaModel();
         $this->MatkulModel = new \App\Models\MatkulModel();
+        $this->db = \Config\Database::connect();
     }
 }

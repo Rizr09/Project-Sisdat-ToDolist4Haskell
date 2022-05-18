@@ -1,3 +1,5 @@
-- Terjemah SQL query ke CI4 Model (ex untuk menampilkan nama mata kuliah, untuk mengelompokkan list berdasarkan pembuatnya, bisa menggunakan user_id(), dll.)
-- CRUD
+- C
+- R
+- U
+- D
 - Done
