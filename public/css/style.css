@@ -176,3 +176,16 @@ a:hover, a:focus {
     color: #e95e37;
 }
 
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    animation: 
+      typing 5s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+  }

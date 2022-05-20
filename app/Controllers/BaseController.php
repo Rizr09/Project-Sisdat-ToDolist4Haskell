@@ -53,5 +53,6 @@ class BaseController extends Controller
         $this->MahasiswaModel = new \App\Models\MahasiswaModel();
         $this->MatkulModel = new \App\Models\MatkulModel();
         $this->db = \Config\Database::connect();
+        session();
     }
 }

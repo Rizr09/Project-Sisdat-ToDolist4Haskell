@@ -22,7 +22,7 @@
       </div>
       <footer class="pt-3 mt-4 text-muted border-top">
         Made with <3 © 2022 </footer>
-        <a href="https://storyset.com/communication">Communication illustrations by Storyset</a>
+        <a target="_blank" href="https://storyset.com/communication">Communication illustrations by Storyset</a>
     </div>
 </main>
 <?= $this->endSection(); ?>

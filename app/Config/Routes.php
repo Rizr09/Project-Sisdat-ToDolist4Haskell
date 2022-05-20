@@ -32,7 +32,13 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
-$routes->get('/todolist/content/(:any)', 'Todolist::detail/$1');
+$routes->get('/pages/about', 'Mahasiswa::about');
+$routes->get('/todolist/content/create', 'Todolist::create');
+$routes->get('/todolist/content/edit/(:num)', 'Todolist::edit/$1');
+$routes->post('/todolist/content/update/(:num)', 'Todolist::update/$1');
+$routes->post('/todolist/content/save', 'Todolist::save');
+$routes->delete('/todolist/content/delete/(:num)', 'Todolist::delete/$1');
+$routes->get('/todolist/content/(:num)', 'Todolist::detail/$1');
 
 /*
  * --------------------------------------------------------------------

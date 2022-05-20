@@ -2,18 +2,11 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-    <!-- <div class="row">
-        <div class="col mt-2 d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="/logout">
-                    <button class="btn btn-danger" type="submit" name="submit">Logout</button>
-            </a>
-        </div>
-    </div> -->
 
     <div class="row">
         <div class="col">
-            <a href="" class="btn btn-primary mt-3">Add New Event</a>
-            <h2 class="mt-2">Hi <?= $nama; ?> This is Your ToDoList</h2>
+            <a href="/todolist/content/create" class="btn btn-primary mt-3">Add New Event</a>
+            <h2 class="mt-2 typed-out">Hi <?= $nama; ?> This is Your ToDoList</h2>
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <?= session()->getFlashdata('pesan'); ?>

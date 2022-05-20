@@ -17,12 +17,21 @@
 <body>
     <?php if (logged_in()) : ?>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+                <a class="navbar-brand text-dark">ToDoList4Haskell</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end"" id=" navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="/todolist/content">ToDoList</a>
+                        <a class="nav-item nav-link" href="/pages/about">You</a>
+                    </div>
+                </div>
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand">Navbar</a> -->
+                <div class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end"  id=" navbarSupportedContent">
                     <a class="nav-link btn btn-danger text-light" href="/logout">Logout</a>
                 </div>
             </div>
