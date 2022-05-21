@@ -20,7 +20,7 @@
                                 <form action="/todolist/content/delete/<?= $list['id_list']; ?>" method="post" class="d-inline">
                                     <?php csrf_field() ?>
                                     <input type="hidden" name="_method" value="DELETE">
-                                    <button type="submit" class="btn btn-outline-light" onclick="return confirm('Are You Sure?');">Delete</button>
+                                    <button type="submit" class="btn btn-outline-light" onclick="return confirm('Are You Sure Want to Remove it?');">Is it Done?</button>
                                 </form>
                             </div>
                             <div class="row-md-4">

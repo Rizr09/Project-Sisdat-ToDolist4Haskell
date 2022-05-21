@@ -28,7 +28,7 @@
                 <div class="row mb-3">
                     <label for="deadline" class="col-sm-2 col-form-label">Deadline</label>
                     <div class="col-sm-10">
-                        <input type="datetime-local" class="form-control <?= ($validation->hasError('deadline')) ? 'is-invalid' : ''; ?>" id="deadline" name="deadline" value="<?php date("Y-m-d H:i:s"); ?>">
+                        <input type="datetime-local" class="form-control <?= ($validation->hasError('deadline')) ? 'is-invalid' : ''; ?>" id="deadline" name="deadline" value="<?= $list['deadline']; ?>">
                         <div class="invalid-feedback">
                             <?= $validation->getError('deadline'); ?>
                         </div>

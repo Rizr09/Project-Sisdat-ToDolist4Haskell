@@ -114,19 +114,17 @@ class Todolist extends BaseController
         return view('todolist/edit', $data);
     }
     public function update($id_list){
-        $judulLama = $this->TodolistModel->getList($id_list)['judul'];
-        if($judulLama == $this->request->getVar('judul')){
-            $rule_judul = 'required|is_unique[list.judul]';
-        } else {
-            $rule_judul = 'required';
-        }
         if(!$this->validate([
-            'judul' => $rule_judul,
+            'judul' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Insert a valid title'
+                ]
+            ],
             'deskripsi' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Insert a valid description',
-                    'is_unique' => 'This title already exists'
                 ]
             ],
             'deadline' => [
