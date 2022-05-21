@@ -8,4 +8,6 @@ Bugs are expected. Too bad I don't fucking care.
 | 140810210010 | Muhammad Dzikri Alfian Zahir |
 | 140810210046 | Fakhri Fajar Ramadhan        |  
   
-![meme](https://ibb.co/WFmwgyc)
+<p align="center">
+  <img src="https://i.ibb.co/1KF58q9/PROYEKA.png">
+</p>
