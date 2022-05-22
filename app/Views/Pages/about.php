@@ -28,7 +28,7 @@
     <div class="d-flex mb-3 flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
         <!-- Copyright -->
         <div class="text-white mb-3 mb-md-0">
-            Made with <3 © 2022 </div>
+            Made with <a target="_blank" href="https://github.com/rizr09" style="color: white; text-decoration: none;"><3</a> © 2022 </div>
                 <!-- Copyright -->
                 <a target="_blank" href="https://storyset.com/user" class="text-white">User illustrations by Storyset</a>
         </div>

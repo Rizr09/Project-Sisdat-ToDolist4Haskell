@@ -21,7 +21,7 @@
         </div>
       </div>
       <footer class="pt-3 mt-4 text-muted border-top">
-        Made with <3 © 2022 </footer>
+        Made with <a target="_blank" href="https://github.com/rizr09" style="color: grey; text-decoration: none;"><3</a> © 2022 </footer>
         <a target="_blank" href="https://storyset.com/communication">Communication illustrations by Storyset</a>
     </div>
 </main>

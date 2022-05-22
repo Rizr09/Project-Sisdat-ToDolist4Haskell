@@ -12,7 +12,7 @@
                     <?= session()->getFlashdata('pesan'); ?>
                 </div>
             <?php endif; ?>
-            <table class="table align-middle">
+            <table class="table align-middle table-success table-striped table-hover">
                 <thead>
                     <tr>
                         <th scope="col">No</th>

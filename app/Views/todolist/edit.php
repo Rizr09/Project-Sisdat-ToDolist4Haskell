@@ -28,7 +28,10 @@
                 <div class="row mb-3">
                     <label for="deadline" class="col-sm-2 col-form-label">Deadline</label>
                     <div class="col-sm-10">
-                        <input type="datetime-local" class="form-control <?= ($validation->hasError('deadline')) ? 'is-invalid' : ''; ?>" id="deadline" name="deadline" value="<?= $list['deadline']; ?>">
+                        <?php 
+                        $datetime = new DateTime($list['deadline']);
+                        ?>
+                        <input type="datetime-local" class="form-control <?= ($validation->hasError('deadline')) ? 'is-invalid' : ''; ?>" id="deadline" name="deadline" value="<?= $datetime->format('Y-m-d\TH:i'); ?>">
                         <div class="invalid-feedback">
                             <?= $validation->getError('deadline'); ?>
                         </div>
@@ -39,11 +42,8 @@
                     <div class="col-sm-10">
                         <select class="form-select" aria-label="Default select example" name="Kode_matkul">
                             <option selected hidden>Click Here</option>
-                            <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                             <?php foreach ($matkul as $m) : ?>
-                                <option value="<?= $m['kode_matkul']; ?>"><?= $m['nama_matkul']; ?></option>
+                                <option value="<?= $m['kode_matkul']; ?>" <?= ($m['kode_matkul'] == $list['Kode_matkul']) ? 'selected' : ''; ?>><?= $m['nama_matkul']; ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>

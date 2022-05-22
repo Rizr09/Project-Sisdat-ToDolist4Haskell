@@ -1,5 +1,5 @@
 # ToDoList4Haskell   
-Bugs are expected. Too bad I don't fucking care.
+Bugs are expected.
 
 ## Anggota Tim
 | NPM          | Name                         |
