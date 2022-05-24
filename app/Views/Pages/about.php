@@ -8,20 +8,18 @@
                 <img src="/img/about-me-animate.svg" alt="" srcset="">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form action="" method="post">
-                    <div class="divider d-flex align-items-center my-4">
-                        <p class="text-center fw-bold mx-3 mb-0">About You</p>
+                    <div class="divider d-flex align-items-center my-3">
+                        <p class="text-center fw-bold mx-3 mb-0">About Haskellians</p>
                     </div>
-                    <div class="form-outline mb-4">
+                    <div class="mb-4">
                         <h5>NPM: <?= $mhs['NPM']; ?></h5>
                     </div>
-                    <div class="form-outline mb-3">
+                    <div class="mb-4">
                         <h5>Nama: <?= $mhs['nama_mahasiswa']; ?></h5>
                     </div>
-                    <div class="text-center text-lg-start mt-4 pt-2">
+                    <div class="mb-4">
                         <h5>Kelas: <?= $mhs['kelas']; ?></h5>
                     </div>
-                </form>
             </div>
         </div>
     </div>

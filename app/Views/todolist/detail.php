@@ -11,7 +11,23 @@
                     <div class="content">
                         <h6 class="category"><?= $list['judul']; ?> - <?= $matkul; ?></h6>
                         <h4 class="title"><?= $list['deskripsi']; ?></h4>
-                        <p class="description">Do it before <br> <?= $list['deadline']; ?>!</p>
+                        <script>
+                            var deadline = new Date("<?= $list['deadline']; ?>").getTime();
+                            var x = setInterval(function() {
+                                var now = new Date().getTime();
+                                var t = deadline - now;
+                                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                                document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                                if (t < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "EXPIRED";
+                                }
+                            }, 1000);
+                        </script>
+                        <p class="description">Do it before <br> <span id="demo"></span></p>
                         <div class="col">
                             <div class="row-md-4 mb-2 mt-3">
                                 <a href="/todolist/content/edit/<?= $list['id_list']; ?>" class="btn btn-outline-light text-dark">Edit Data</a>
