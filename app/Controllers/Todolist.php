@@ -8,7 +8,7 @@ class Todolist extends BaseController
     public function content() {
         $user_id = user_id();
         // $todolist = $this->TodolistModel->getList($user_id);
-        $todolist = $this->db->query("SELECT id_list, judul, deskripsi, deadline, npm, Kode_matkul, id FROM list WHERE id = $user_id")->getResultArray();
+        $todolist = $this->db->query("SELECT * FROM list WHERE id = $user_id")->getResultArray();
         $data = [
             'title' => 'content | ToDoList4Haskell',
             'todolist' => $todolist,
